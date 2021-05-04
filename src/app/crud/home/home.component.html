@@ -1,0 +1,39 @@
+   <div class="example-container mat-elevation-z8">
+    
+    <a class="btn btn-warning exportexcel mt-2 mr-2" style="cursor: pointer" (click)="Exportexcel()">
+      <mat-icon>Télécharger Excel</mat-icon>
+    </a>
+
+  <mat-table id="excel-table" class="dataTable" [dataSource]="dataSource">
+
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef> Name </th>
+      <td mat-cell *matCellDef="let element"> {{element.first_name}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="lastname">
+      <th mat-header-cell *matHeaderCellDef> Lastname </th>
+      <td mat-cell *matCellDef="let element"> {{element.last_name}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="gender">
+      <th mat-header-cell *matHeaderCellDef> Gender </th>
+      <td mat-cell *matCellDef="let element"> {{element.gender}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="mail">
+      <th mat-header-cell *matHeaderCellDef> Mail </th>
+      <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="view">
+      <th mat-header-cell *matHeaderCellDef> Voir </th>
+      <td mat-cell *matCellDef="let element"> <button type="button" class="btn btn-outline-info" (click)="GoToDetail(element)"><i class="fa fa-eye"></i>Detail</button> </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </mat-table>
+</div>
+
+
