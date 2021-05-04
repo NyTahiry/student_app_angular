@@ -2,6 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.11.
 
+
+
+**** instruction pour demmarer le projet
+- clone reposistory
+- npm install : pour implementer le node_modules
+- Dans le cas ou vous rencotrer des problèmes sur le "ng --version" ou "ng serve"; peut-etre que ce lien sera utile: https://www.c-sharpcorner.com/article/how-to-fix-ps1-can-not-be-loaded-because-running-scripts-is-disabled-on-this-sys/
+
+**** Ajout fonctionalité "chargement page"
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
